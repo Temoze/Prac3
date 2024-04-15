@@ -1,0 +1,19 @@
+﻿<Window x:Class="Prac3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prac3"
+        mc:Ignorable="d"
+        Title="FullData" Height="200" Width="600">
+    <DataGrid x:Name="OrdersGrd" AutoGenerateColumns="False">
+        <DataGrid.Columns>
+            <DataGridTextColumn Header="Количество" Binding="{Binding Quantity}" />
+            <DataGridTextColumn Header="Дата заказа" Binding="{Binding OrderDate}" />
+            <DataGridTextColumn Header="Имя покупателя" Binding="{Binding CustomerName}" />
+            <DataGridTextColumn Header="Почта покупателя" Binding="{Binding CustomerEmail}" />
+            <DataGridTextColumn Header="Название товара" Binding="{Binding ProductName}" />
+            <DataGridTextColumn Header="Цена товара" Binding="{Binding ProductPrice}" />
+        </DataGrid.Columns>
+    </DataGrid>
+</Window>
